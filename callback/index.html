@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="ko">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>앱으로 돌아가는 중</title>
+<body style="font-family:-apple-system;background:#1e1e20;color:#fff;text-align:center;padding-top:30vh">
+<p>앱으로 돌아가는 중…</p>
+<p><a id="go" style="color:#3e6ae1">안 넘어가면 여기를 누르세요</a></p>
+<script>
+  var target = 'dyteslaapp://callback' + location.search;
+  document.getElementById('go').href = target;
+  location.replace(target);
+</script>
+</body>
+</html>
